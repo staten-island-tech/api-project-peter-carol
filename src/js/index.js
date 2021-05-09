@@ -1,4 +1,4 @@
-import { DOMSelectors } from "./DOM";
-import { genres } from "./genre";
+// import { DOMSelectors } from "./DOM";
+// import { genres } from "./genre";
 
-const key = "YOURKEYHERE";
+// const key = "YOURKEYHERE";
