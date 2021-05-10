@@ -2,12 +2,25 @@
   background-color: red;
   width: 100vw;
   height: 100vh;
+  display: inline;
+}
+
+.homePage-photo-text {
+  height: auto;
+  width: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  font-size: 4rem;
 }
 
 .homePage-photo {
   width: 100vw;
   height: 100vh;
   background-color: gray;
+  //background-image: url(/src/images/PlatingFood.jpeg);
+  position: relative;
 }
 
 .recipe-card {
