@@ -6,16 +6,20 @@
 .recipes {
   width: 100vw;
   height: auto;
-  background: red;
+  background: rgb(243, 243, 243);
   padding: 1rem;
   display: flex;
   justify-content: space-around;
 }
 
 .recipe-card {
+  width: 33%;
+}
+
+.recipe-card-box {
   width: 15rem;
   height: 20rem;
-  background-color: brown;
+  background-color: rgb(133, 133, 133);
   padding: 1rem;
-  border-radius: 1.5rem;
+  position: relative;
 }
