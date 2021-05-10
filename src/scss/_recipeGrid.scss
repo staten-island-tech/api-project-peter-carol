@@ -1,0 +1,21 @@
+@import "variables.scss";
+* {
+  box-sizing: border-box;
+}
+
+.recipes {
+  width: 100vw;
+  height: auto;
+  background: red;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.recipe-card {
+  width: 15rem;
+  height: 20rem;
+  background-color: brown;
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
