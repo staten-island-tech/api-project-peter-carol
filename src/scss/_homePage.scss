@@ -22,8 +22,6 @@
   align-items: center;
   justify-content: center;
   //Filter looking thing
-  background-color: rgba(77, 9, 9, 0.158);
-  height: 100%;
 }
 
 .homePage-photo-text {
@@ -31,19 +29,4 @@
   color: $white;
   margin: 1rem;
   text-align: center;
-}
-
-.about {
-  width: 80%;
-  margin: auto;
-}
-
-.about-title {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.about-text {
-  font-size: 1rem;
-  margin: 0;
 }
