@@ -16,3 +16,9 @@ $open-sans: "Open Sans", sans-serif;
     clear: both;
   }
 }
+
+.flex-align-jcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
