@@ -1,6 +1,5 @@
 @import "variables";
-@import "_homePage";
-@import "_about";
+
 @import "_recipeGrid";
 
 body {
@@ -9,9 +8,4 @@ body {
   padding-bottom: 1rem;
   margin: auto;
   text-decoration: none;
-}
-
-.filter {
-  background-color: rgba(77, 9, 9, 0.158);
-  height: 100%;
 }
