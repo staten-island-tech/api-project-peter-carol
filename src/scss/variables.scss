@@ -1,7 +1,4 @@
 // Variables
-$regal-blue: #034378;
-$san-juan: #2d4e68;
-$bermuda: #77d7b9;
 $white: #fff;
 $black: #000;
 $open-sans: "Open Sans", sans-serif;
@@ -10,4 +7,9 @@ $open-sans: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.filter {
+  background-color: rgba(77, 9, 9, 0.158);
+  height: 100%;
 }
