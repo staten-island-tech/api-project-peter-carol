@@ -22,7 +22,7 @@ https://api.spoonacular.com/recipes/search?query=breakfast&sortDirection=desc&ap
         <div class="movie-card-back">
           <h3 class="movie-card-header">${breakfast.title}</h3>
           <div class="score-box">
-            <p class="user-score">Timing</p>
+            <p class="user-score">Preparation Time</p>
             <p class="user-score">${breakfast.readyInMinutes}</p>
           </div>
 
@@ -30,13 +30,7 @@ https://api.spoonacular.com/recipes/search?query=breakfast&sortDirection=desc&ap
             <p class="release-date">Servings</p>
             <p class="release-date">${breakfast.servings}</p>
           </div>
-
-          <div class="movie-genres">
-            <li class="movie-genre">Sci-Fi</li>
-            <li class="movie-genre">Fantasy</li>
-            <li class="movie-genre">Horror</li>
-          </div>
-        </div>
+     </div>
       </div>`
       );
     });
