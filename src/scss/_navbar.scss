@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: right;
   flex-direction: row;
   background-color: black;
@@ -64,8 +64,6 @@
   .navigation a {
     display: block;
     margin: 0;
-    color:red;
-    background-color: blue;
   }
   #toggle:checked + .navigation {
     display: block;
