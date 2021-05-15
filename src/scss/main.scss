@@ -2,9 +2,13 @@
 @import "_homePage";
 @import "_about";
 
+* {
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
 body {
   font-size: 62.5%;
-  background-color: salmon;
+  background-color: $primary-main;
   padding-bottom: 1rem;
   margin: auto;
   text-decoration: none;

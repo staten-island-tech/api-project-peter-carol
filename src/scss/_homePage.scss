@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .homePage {
-  background-color: red;
+  background-color: $primary-main;
   width: 100vw;
   height: 100vh;
   display: inline;
@@ -39,7 +39,7 @@
 .homePage-photo-text {
   width: 75%;
   font-size: 5rem;
-  color: $white;
+  color: $homePage-text-main;
   margin: 1rem;
   text-align: center;
 }
