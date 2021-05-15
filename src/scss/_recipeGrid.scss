@@ -16,6 +16,7 @@
 
 .recipe-card {
   width: 33%;
+  margin: 1vh;
 }
 
 .recipe-btn {
@@ -63,7 +64,10 @@
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.452);
 }
-
+.meal-image {
+  height: 100%;
+  width: 100%;
+}
 .recipe-card-box {
   width: 22rem;
   font-size: 1.5rem;
