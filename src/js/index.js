@@ -13,10 +13,13 @@ const query = async function () {
         `<section id="recipes">
       <div class="recipe-card">
         <div class="recipe-card-box">
+        
+        <img src="${meal.strMealThumb}" alt="" class="meal-image">
           <div class="recipe-box-text">
+          
             <div class="recipe-card-text recipe-name">${meal.strMeal}</div>
             <div class="recipe-card-text recipe-cuisine">Cuisine: ${meal.strArea} </div>
-            <div class="recipe-card-text recipe-info">Ingredients <br> This meal's main ingredients are ${meal.strIngredient1}, ${meal.strIngredient2}, ${meal.strIngredient3}, ${meal.strIngredient4}. </div>
+            <div class="recipe-card-text recipe-info">Ingredients <br> This meal's main ingredients are ${meal.strIngredient1}, ${meal.strIngredient2}, ${meal.strIngredient3}, and ${meal.strIngredient4}. </div>
             <a class="flex-align-jcontent recipe-btn" href="#recipes">Read More</a>
              </div> <!-- recipte-box-text end -->
         </div> <!-- recipe-card-box end -->
@@ -28,5 +31,6 @@ const query = async function () {
     console.log(error);
     alert("Sorry! Seems like something went wrong.");
   }
+  
 };
 query();
