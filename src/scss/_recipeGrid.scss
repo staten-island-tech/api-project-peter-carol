@@ -4,8 +4,16 @@
   overflow-wrap: anywhere;
 }
 
+.recipe-grid {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+ 
 #recipes {
-  height: auto;
+   flex-basis: 33%;
+  flex-grow: 1;
   background: rgb(243, 243, 243);
   padding: 1rem;
   display: flex;
@@ -14,8 +22,6 @@
 }
 
 .recipe-card {
-  
-  width: 33%;
   margin: 1vh;
 }
 
@@ -48,7 +54,7 @@
 
   &:hover {
     color: darkred;
-    //background: darkgoldenrod;
+    background: grey;
     z-index: 1;
 
     &:after {
@@ -61,7 +67,7 @@
 .recipe-box-text {
  position: relative;
   color: rgb(255, 255, 255);
-  height: 28rem;
+  height: 25vw;
   padding: 2rem 1rem;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.452);
@@ -85,7 +91,7 @@
   
 
   &:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1);
 
     .recipe-box-text {
       opacity: 1;  
