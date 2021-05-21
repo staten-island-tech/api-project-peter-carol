@@ -76,7 +76,7 @@
 
 .recipe-card-box {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 2vw;
   padding: 1rem;
   border-radius: 1rem;
   border: 10px solid #ccc;
@@ -107,22 +107,49 @@
     left:0;
 }
 .recipe-name {
-  font-size: 2rem;
+  font-size: 2vw;
   margin: 0.1rem 0;
   height: 30% auto;
   overflow: hidden;
 }
 
 .recipe-cuisine {
-  font-size: 1.8rem;
+  font-size: 1.8vw;
   margin: 1rem 0;
   height: 10% auto;
   overflow: hidden;
 }
 
 .recipe-info {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   margin: 1rem 0;
   height: 60% auto;
   overflow: hidden;
+}
+.recipe-title {
+   font-size: 1.4vw;
+  margin: 1rem 0;
+  height: 60% auto;
+  overflow: hidden;
+}
+@media only screen and (max-width: 950px) {
+  .recipe-info {
+    display: none;
+  }
+  .recipe-title {
+    display: none;
+  }
+  #recipes {
+    flex-basis: 100%;
+  }
+  .recipe-name{
+    font-size: 5vw;
+  }
+  .recipe-cuisine{
+    font-size: 5vw;
+  }
+  .recipe-btn{
+    font-size: 2.5vw;
+    margin: none;
+  }
 }
