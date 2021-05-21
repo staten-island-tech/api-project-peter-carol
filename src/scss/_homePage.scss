@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.homePage {
+  background-color: red;
+  height: 100vh;
+  display: inline;
+}
+
+.homePage-photo {
+  height: 100vh;
+  //Background Cover
+  background-image: url(https://images.pexels.com/photos/4552173/pexels-photo-4552173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(
+    13% 98%,
+    26% 100%,
+    44% 96%,
+    54% 98%,
+    68% 94%,
+    85% 99%,
+    100% 95%,
+    100% 0,
+    0 0,
+    0 100%
+  );
+}
+
+.homePage-photo-textbox {
+  //Centers the Text Box
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //Filter looking thing
+}
+
+.homePage-photo-text {
+  font-size: 4rem;
+  color: $white;
+  margin: 1rem;
+  text-align: center;
+}
