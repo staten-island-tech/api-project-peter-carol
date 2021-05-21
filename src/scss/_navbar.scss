@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  flex-direction: row;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#menu {
+  text-align: center;
+  height: 70px;
+}
+
+.navigation {
+  display: flex;
+  color: white;
+  font-size: 3vh;
+  padding: 13px 10px;
+  background: black;
+}
+
+.navigation a {
+  clear: right;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+}
+#menu label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 22px;
+  float: right;
+}
+.contact {
+  background-color: red;
+  border-radius: 5vh;
+}
+
+#toggle {
+  display: none;
+}
+
+.navigation a:hover {
+  background: white;
+  color: black;
+}
+
+@media only screen and (max-width: 1150px) {
+  #menu label {
+    display: block;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    color: white;
+  }
+  .navigation {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    margin-right: 20px;
+  }
+  #toggle:checked + .navigation {
+    display: block;
+  }
+}
