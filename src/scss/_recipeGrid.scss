@@ -80,13 +80,6 @@
   padding: 1rem;
   border-radius: 1rem;
   border: 10px solid #ccc;
-   
-
-  //background-image: url(https://images.pexels.com/photos/4552173/pexels-photo-4552173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
- background-size:cover;
-  background-position: center;
-  
-
   transition: 0.1s;
   
 
@@ -139,17 +132,22 @@
   .recipe-title {
     display: none;
   }
-  #recipes {
-    flex-basis: 100%;
-  }
   .recipe-name{
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+  #recipes{
+    flex-basis: 50%;
   }
   .recipe-cuisine{
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .recipe-btn{
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     margin: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .recipe-card {
+    width: 70vw;
   }
 }

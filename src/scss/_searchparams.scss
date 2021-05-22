@@ -1,0 +1,33 @@
+.search-recipe {
+    font-size: 4rem;
+    margin: 2rem auto 3rem auto;
+    text-align: center;
+}
+.search-recipe-link,
+.search-recipe-link:visited,
+.search-recipe-link:link{
+    text-decoration: none;
+}
+
+.search-recipe-link:hover{
+    text-decoration: underline;
+}
+.search-form{
+    display: flex;
+    flex-direction: column;
+    align-items:center center;
+    width: 60vw;
+    margin: 2rem auto;
+
+}
+#search-area{
+    width: 60vw;
+    height: 20vh;
+    font-size: 2rem;
+    border-radius: 1vh;
+}
+.submit-button {
+    font-size: 2rem;
+    background-color: silver;
+border-radius: 1vh;
+}
