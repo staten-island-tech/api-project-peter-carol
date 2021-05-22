@@ -1,4 +1,4 @@
- import { DOMSelectors } from "./DOM";
+import { DOMSelectors } from "./DOM";
 // import { genres } from "./genre";
 
 // const key = "YOURKEYHERE";
@@ -9,10 +9,10 @@ const query = async function () {
       `https://www.themealdb.com/api/json/v1/1/search.php?s=`
     );
     const data = await response.json();
-    data.meals.forEach((meal)=>{
+    data.meals.forEach((meal) => {
       let instructions = meal.strInstructions.substring(0, 229);
-      if (meal.strInstructions.length>229)
-      instructions = instructions + "...";
+      if (meal.strInstructions.length > 229)
+        instructions = instructions + "...";
       DOMSelectors.grid.insertAdjacentHTML(
         "beforeend",
         `<section id="recipes">
@@ -39,6 +39,5 @@ const query = async function () {
     console.log(error);
     alert("Sorry! Seems like something went wrong.");
   }
-  
 };
 query();
