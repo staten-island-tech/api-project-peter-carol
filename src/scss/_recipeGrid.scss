@@ -10,9 +10,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
- 
+
 #recipes {
-   flex-basis: 33%;
+  flex-basis: 33%;
   // flex-grow: 1;
   background: salmon;
   padding: 1rem;
@@ -65,13 +65,12 @@
 }
 
 .recipe-box-text {
- position: relative;
+  position: relative;
   color: rgb(255, 255, 255);
   height: 25vw;
   padding: 2rem 1rem;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.452);
-
 }
 
 .recipe-card-box {
@@ -81,23 +80,22 @@
   border-radius: 1rem;
   border: 10px solid #ccc;
   transition: 0.1s;
-  
 
   &:hover {
     transform: scale(1.1);
 
     .recipe-box-text {
-      opacity: 1;  
+      opacity: 1;
     }
   }
 }
 
 .meal-image {
-  position:absolute;
-    height: 100%;
-    width:100%;
-    top: 0;
-    left:0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .recipe-name {
   font-size: 2vw;
@@ -120,7 +118,7 @@
   overflow: hidden;
 }
 .recipe-title {
-   font-size: 1.4vw;
+  font-size: 1.4vw;
   margin: 1rem 0;
   height: 60% auto;
   overflow: hidden;
@@ -132,16 +130,16 @@
   .recipe-title {
     display: none;
   }
-  .recipe-name{
+  .recipe-name {
     font-size: 4vw;
   }
-  #recipes{
+  #recipes {
     flex-basis: 50%;
   }
-  .recipe-cuisine{
+  .recipe-cuisine {
     font-size: 4vw;
   }
-  .recipe-btn{
+  .recipe-btn {
     font-size: 3.5vw;
     margin: none;
   }

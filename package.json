@@ -18,5 +18,7 @@
   "browserslist": [
     "since 2017-06"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "meals": "^0.7.0"
+  }
 }
