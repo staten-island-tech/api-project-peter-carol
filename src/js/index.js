@@ -14,9 +14,9 @@ const query = async function () {
       let instructions = meal.strInstructions.substring(0, 229);
       if (meal.strInstructions.length > 229)
         instructions = instructions + "...";
-      DOMSelectors.grid.insertAdjacentHTML(
-        "beforeend",
-        `<section id="recipes">
+        DOMSelectors.grid.insertAdjacentHTML(
+          "beforeend",
+          `<section id="recipes">
       <div class="recipe-card">
         <div class="recipe-card-box">
         
@@ -34,12 +34,12 @@ const query = async function () {
         </div> <!-- recipe-card-box end -->
       </div> <!-- recipe-card end -->
     </section> <!-- recipes end -->`
-      );
-    });
-  } catch (error) {
-    console.log(error);
-    alert("Sorry! Seems like something went wrong.");
-  }
-};
-query();
-listen();
+        );
+      });
+    } catch (error) {
+      console.log(error);
+      alert("Sorry! Seems like something went wrong.");
+    }
+  };
+  query();
+  listen();
