@@ -1,4 +1,5 @@
- import { DOMSelectors } from "./DOM";
+import { DOMSelectors } from "./DOM";
+import { listen } from "./search";
 // import { genres } from "./genre";
 
 // const key = "YOURKEYHERE";
@@ -9,13 +10,13 @@ const query = async function () {
       `https://www.themealdb.com/api/json/v1/1/search.php?s=`
     );
     const data = await response.json();
-    data.meals.forEach((meal)=>{
+    data.meals.forEach((meal) => {
       let instructions = meal.strInstructions.substring(0, 229);
-      if (meal.strInstructions.length>229)
-      instructions = instructions + "...";
-      DOMSelectors.grid.insertAdjacentHTML(
-        "beforeend",
-        `<section id="recipes">
+      if (meal.strInstructions.length > 229)
+        instructions = instructions + "...";
+        DOMSelectors.grid.insertAdjacentHTML(
+          "beforeend",
+          `<section id="recipes">
       <div class="recipe-card">
         <div class="recipe-card-box">
         
@@ -28,17 +29,17 @@ const query = async function () {
             <span class="recipe-title" >Instructions</span>
             <p class="recipe-info" >${instructions}</p> 
             </div>
-            <a class="flex-align-jcontent recipe-btn" href="#recipes">Read More</a>
+            <a class="flex-align-jcontent recipe-btn" href="${meal.strYoutube}">Watch Video</a>
              </div> <!-- recipe-box-text end -->
         </div> <!-- recipe-card-box end -->
       </div> <!-- recipe-card end -->
     </section> <!-- recipes end -->`
-      );
-    });
-  } catch (error) {
-    console.log(error);
-    alert("Sorry! Seems like something went wrong.");
-  }
-  
-};
-query();
+        );
+      });
+    } catch (error) {
+      console.log(error);
+      alert("Sorry! Seems like something went wrong.");
+    }
+  };
+  query();
+  listen();
