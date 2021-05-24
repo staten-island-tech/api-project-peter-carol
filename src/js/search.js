@@ -16,8 +16,6 @@ import { DOMSelectors } from "./DOM";
             `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchParams}`
           );
           const data = await response.json();
-        
-          
           data.meals.forEach((meal) => {
              let searchID = meal.idMeal;
               const searchbyID = async function () {
