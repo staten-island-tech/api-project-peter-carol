@@ -1,15 +1,26 @@
+.searchParam{
+  text-align: center;
+  position: relative;
+  top: 5vh;
+
+}
 .search-recipe {
   font-size: 4rem;
   margin: 2rem auto 3rem auto;
   text-align: center;
 }
-.search-recipe-link,
-.search-recipe-link:visited,
-.search-recipe-link:link {
+.search-link{
+  font-size: 4vw;
+  display: flex;
+  text-align: center;
+}
+.search-link,
+.search-link:visited,
+.search-link:link {
   text-decoration: none;
 }
 
-.search-recipe-link:hover {
+.search-link:hover {
   text-decoration: underline;
 }
 .search-form {

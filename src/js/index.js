@@ -1,5 +1,4 @@
 import { DOMSelectors } from "./DOM";
-import { listen } from "./search";
 // import { genres } from "./genre";
 
 // const key = "YOURKEYHERE";
@@ -7,7 +6,7 @@ import { listen } from "./search";
 const query = async function () {
   try {
     const response = await fetch(
-      `https://www.themealdb.com/api/json/v1/1/search.php?s=`
+      `https://www.themealdb.com/api/json/v1/1/lookup.php?i=`
     );
     const data = await response.json();
     data.meals.forEach((meal) => {
@@ -42,4 +41,3 @@ const query = async function () {
     }
   };
   query();
-  listen();

@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Josefin+Slab:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+
+<body>
+    <section class="navbar">
+        <div id="menu">
+            <label for="toggle">&#9776</label>
+            <input type="checkbox" id="toggle" />
+            <div class="navigation">
+                <a href="index.html">Home</a>
+                <a href="#diet">Diet</a>
+                <a href="#Breakfast">Breakfast</a>
+                <a class="contact" href="#contactus">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    <!--homePage end-->
+
+    <section class="searchParam">
+        <h1 class="search-recipe">Search Here!</h1>
+        <h2 class="search-recipe-details">Be Specific! For example, search salmon, not fish. Search chocolate chips, not chocolate.</h2>
+        
+        <form action="" id="search-form" class="search-form">
+            <textarea placeholder="eg: salmon" name="" id="search-area" class="search-area"></textarea>
+            <input type="submit" class="submit-button">
+        </form>
+
+    </section>
+
+    <section class="recipe-grid">
+    </section>
+
+    <script src="js/search.js"></script>
+</body>
+
+</html>
