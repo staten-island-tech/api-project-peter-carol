@@ -3,7 +3,6 @@ import { DOMSelectors } from "./DOM";
   const listen = function () {
     console.log("listen");
     DOMSelectors.searchForm.addEventListener("submit", function (e) {
-      //console.log("submit");
       e.preventDefault(); //prevents the form from resetting the page
       DOMSelectors.grid.innerHTML= "";
       //console.log("done");

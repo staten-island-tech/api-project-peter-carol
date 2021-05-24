@@ -25,7 +25,7 @@ const query = async function () {
             <div class="recipe-card-text recipe-name">${meal.strMeal}</div>
             <div class="recipe-card-text recipe-cuisine">Cuisine: ${meal.strArea} </div>
             <div class="recipe-card-text ">
-            <span class="recipe-title" >Instructions</span>
+            <span class="recipe-title">Instructions</span>
             <p class="recipe-info" >${instructions}</p> 
             </div>
             <a class="flex-align-jcontent recipe-btn" href="${meal.strYoutube}">Watch Video</a>
