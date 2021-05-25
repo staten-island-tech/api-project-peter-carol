@@ -1,8 +1,4 @@
 @import "variables.scss";
-* {
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
 
 .recipe-grid {
   display: flex;
@@ -28,8 +24,8 @@
 .recipe-btn {
   display: flex;
   flex: 1 1 auto;
-  margin: 10px;
-  padding: 20px;
+  //margin: 5px;
+  padding: 10px;
   border: 2px solid #f7f7f7;
   border-radius: 2rem;
   text-align: center;
@@ -70,7 +66,7 @@
   height: 25vw;
   padding: 2rem 1rem;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgba(0, 0, 0, 0.644);
 }
 
 .recipe-card-box {
@@ -99,30 +95,35 @@
 }
 .recipe-name {
   font-size: 2vw;
-  margin: 0.1rem 0;
-  height: 30% auto;
+  font-family: $PollerOne;
+  margin-bottom: 0.5rem 0;
+  height: 20% auto;
   overflow: hidden;
 }
 
 .recipe-cuisine {
   font-size: 1.8vw;
-  margin: 1rem 0;
-  height: 10% auto;
+  font-family: $BreeSerif;
+  margin-bottom: 1.5rem;
+  height: 5% auto;
   overflow: hidden;
 }
 
 .recipe-info {
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   margin: 1rem 0;
-  height: 60% auto;
+  height: 40%;
   overflow: hidden;
 }
+
 .recipe-title {
-  font-size: 1.4vw;
-  margin: 1rem 0;
-  height: 60% auto;
+  font-size: 2vw;
+  //margin: 1rem 0;
+  //height: 60% auto;
   overflow: hidden;
+  font-family: $BreeSerif;
 }
+
 @media only screen and (max-width: 950px) {
   .recipe-info {
     display: none;
@@ -132,12 +133,14 @@
   }
   .recipe-name {
     font-size: 4vw;
+    height: 30%;
   }
   #recipes {
     flex-basis: 50%;
   }
   .recipe-cuisine {
     font-size: 4vw;
+    margin: 0;
   }
   .recipe-btn {
     font-size: 3.5vw;

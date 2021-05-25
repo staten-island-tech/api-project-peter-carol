@@ -1,7 +1,12 @@
 // Variables
 $white: #fff;
 $black: #000;
+
 $open-sans: "Open Sans", sans-serif;
+$BreeSerif: "Bree Serif", serif;
+$PollerOne: "Poller One", cursive;
+$Skranji: "Skranji", cursive;
+$BlackOps: "Black Ops One", cursive;
 
 .flex-align-jcontent {
   display: flex;
@@ -10,6 +15,6 @@ $open-sans: "Open Sans", sans-serif;
 }
 
 .filter {
-  background-color: rgba(77, 9, 9, 0.158);
+  background-color: rgba(41, 7, 7, 0.26);
   height: 100%;
 }

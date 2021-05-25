@@ -36,8 +36,18 @@
 }
 
 .homePage-photo-text {
-  font-size: 4rem;
   color: $white;
-  margin: 1rem;
   text-align: center;
+  margin: 0;
+}
+
+.homePage-photo-text-main {
+  font-size: 7rem;
+  font-family: $BlackOps;
+}
+
+.homePage-photo-text-sub {
+  font-size: 4rem;
+  font-family: $Skranji;
+  margin-bottom: 2rem;
 }
